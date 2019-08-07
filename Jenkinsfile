@@ -24,8 +24,8 @@ agent any
         always {
             echo 'I will always say Hello again!'
         }
-       steps {
-        echo 'This is a step in post`'
+       failure {
+        echo 'Only show when failure`'
         }
     }
 
