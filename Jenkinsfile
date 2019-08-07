@@ -16,6 +16,7 @@ agent any
             when {
              anyOf {
              branch 'not-exist'
+             branch 'feature-test'
               }
             }
             steps {
