@@ -1,8 +1,3 @@
-node {
-
-  checkout scm
-
-}
 pipeline {
 
 agent any
@@ -23,5 +18,15 @@ agent any
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
+
+      post { 
+        always { 
+            echo 'I will always say Hello again!'
+        }
+       steps {
+        echo 'This is a step in post`'
+	}
+    }
+
     }
 }
