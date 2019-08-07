@@ -19,14 +19,14 @@ agent any
             }
         }
 
-      post { 
-        always { 
+    }
+ post {
+        always {
             echo 'I will always say Hello again!'
         }
        steps {
         echo 'This is a step in post`'
-	}
+        }
     }
 
-    }
 }
