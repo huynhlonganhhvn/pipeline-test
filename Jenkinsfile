@@ -5,9 +5,7 @@ node {
 }
 pipeline {
 
-agent {
-        docker { image 'busybox' }
-    }
+agent any
     stages {
         stage('Build') {
             steps {
