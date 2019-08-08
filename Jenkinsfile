@@ -20,6 +20,10 @@ agent any
               }
             }
             steps {
+		input (
+    message: 'Do you approve?',
+    ok: 'Yes'		
+  )
                 echo 'Deploying....'
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
