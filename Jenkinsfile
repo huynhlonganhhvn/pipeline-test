@@ -5,6 +5,7 @@ agent any
         stage('Build') {
             steps {
                 echo 'Building..'
+                cat $WORKSPACE/readme
             }
         }
         stage('Test') {
